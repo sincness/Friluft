@@ -1,0 +1,114 @@
+        // IMPORTS
+        @import '_colors.scss';
+        @import '_global.scss';
+        // HITS ALL CONTENT
+        * {
+            overflow: hidden;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        // NAVIGATION
+        .nav {
+            &__list a {
+                text-decoration: none;
+                color: $light;
+            }
+            &__menu {
+                font-size: 16px;
+                margin: 0;
+                padding: 1em;
+                list-style: none;
+                height: 51em;
+                // display: flex;
+                background-color: $dark;
+                &-dropdown {
+                    display: none;
+                    &-list a {
+                        display: block;
+                        text-decoration: none;
+                        color: $dark;
+                        border-top: 1px solid $light;
+                        padding: 5px 15px 5px 15px;
+                        background: $light;
+                        margin-left: 1px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+            &__list {
+                display: block;
+                position: relative;
+                margin: 1em;
+                transform: translateX(-50%);
+                left: 85%;
+                top: 20%;
+                margin-top: 3em;
+                &:hover .nav__menu-dropdown {
+                    display: block;
+                    position: relative;
+                }
+            }
+            &__list:hover+.nav__menu-dropdown-list {
+                float: none;
+                font-size: 12px;
+                display: block;
+                position: absolute;
+            }
+            // SRC INPUT
+            &__src {
+                position: absolute;
+                transform: translateX(-50%);
+                left: 50%;
+                margin-top: 1em;
+                &-btn {
+                    background: $cc15;
+                    padding: 0.3em;
+                    border-left: none;
+                    color: $light;
+                    border-radius: 0 7px 7px 0;
+                    border: 1px solid $cc9;
+                    cursor: pointer;
+                    float: left;
+                    width: 3em;
+                }
+                input {
+                    border-radius: 7px 0 0 7px;
+                    padding: 0.3em;
+                    width: 14em;
+                    border: 0.5px solid $cc9;
+                    float: left;
+                }
+            }
+            &__btn {
+                transform: translateX(-50%);
+                left: 50%;
+                top: 85%;
+                position: absolute;
+                color: $light;
+                background-color: $inactive;
+                border: none;
+                width: 100%;
+                padding: 1em;
+                font-size: 1em;
+                cursor: pointer;
+            }
+            // LOGIN & ADD LINK
+            &__login-link {
+                transform: translateX(-50%);
+                left: 50%;
+                top: 94%;
+                position: absolute;
+                color: $light;
+            }
+        }
+        
+        //dropdown arrow
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            border: solid $light;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-left: 1em;
+        }

@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #F1F1F1;
+  overflow-x: hidden;
+}
+
+* {
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav__list a {
+  text-decoration: none;
+  color: #F1F1F1;
+}
+
+.nav__menu {
+  font-size: 16px;
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+  height: 51em;
+  background-color: #1D2120;
+}
+
+.nav__menu-dropdown {
+  display: none;
+}
+
+.nav__menu-dropdown-list a {
+  display: block;
+  text-decoration: none;
+  color: #1D2120;
+  border-top: 1px solid #F1F1F1;
+  padding: 5px 15px 5px 15px;
+  background: #F1F1F1;
+  margin-left: 1px;
+  white-space: nowrap;
+}
+
+.nav__list {
+  display: block;
+  position: relative;
+  margin: 1em;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 85%;
+  top: 20%;
+  margin-top: 3em;
+}
+
+.nav__list:hover .nav__menu-dropdown {
+  display: block;
+  position: relative;
+}
+
+.nav__list:hover + .nav__menu-dropdown-list {
+  float: none;
+  font-size: 12px;
+  display: block;
+  position: absolute;
+}
+
+.nav__src {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  margin-top: 1em;
+}
+
+.nav__src-btn {
+  background: #5b6872;
+  padding: 0.3em;
+  border-left: none;
+  color: #F1F1F1;
+  border-radius: 0 7px 7px 0;
+  border: 1px solid #cdd4d9;
+  cursor: pointer;
+  float: left;
+  width: 3em;
+}
+
+.nav__src input {
+  border-radius: 7px 0 0 7px;
+  padding: 0.3em;
+  width: 14em;
+  border: 0.5px solid #cdd4d9;
+  float: left;
+}
+
+.nav__btn {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 85%;
+  position: absolute;
+  color: #F1F1F1;
+  background-color: #ee2727;
+  border: none;
+  width: 100%;
+  padding: 1em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.nav__login-link {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 94%;
+  position: absolute;
+  color: #F1F1F1;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  border: solid #F1F1F1;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 1em;
+}
+/*# sourceMappingURL=nav.css.map */

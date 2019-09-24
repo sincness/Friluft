@@ -1,0 +1,11 @@
+// This is the global stylesheet. used for global margin, padding etc.
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $light;
+    overflow-x: hidden;
+}

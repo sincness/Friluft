@@ -1,1 +1,2 @@
-CREATE TABLE `db`.`users` ( `id` INT NOT NULL AUTO_INCREMENT , `username` VARCHAR(40) NOT NULL , `password` VARCHAR(40) NOT NULL , `email` VARCHAR(60) NOT NULL , `address` VARCHAR(100) NOT NULL , `postnumber` INT(10) NOT NULL , `phone` INT(20) NOT NULL , `city` VARCHAR(50) NOT NULL , `date` DATE NULL DEFAULT NULL , `status` INT(10) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+-- Users table
+CREATE TABLE `db`.`users` ( `id` INT NOT NULL AUTO_INCREMENT , `username` VARCHAR(40) NOT NULL , `password` VARCHAR(40) NOT NULL , `email` VARCHAR(60) NOT NULL , `address` VARCHAR(100) NOT NULL , `postnumber` INT(10) NOT NULL , `phone` INT(20) NOT NULL , `city` VARCHAR(50) NOT NULL , `date` DATE NULL , `status` INT(10) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB; 

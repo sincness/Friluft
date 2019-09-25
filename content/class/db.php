@@ -1,7 +1,7 @@
 <?php
 class DB {
     private static function connect () {
-        $pdo = new PDO('mysql:host=127.0.0.1;dbname=ajax_test;charset=utf8', 'root', '');
+        $pdo = new PDO('mysql:host=127.0.0.1;dbname=db;charset=utf8', 'root', '');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
     }
@@ -16,9 +16,6 @@ class DB {
         }
     }
 }
-
-
-
 
 $message = DB::query("SELECT * FROM messenger");
 

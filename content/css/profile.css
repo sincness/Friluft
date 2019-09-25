@@ -1,0 +1,148 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #F1F1F1;
+  overflow-x: hidden;
+}
+
+.profile {
+  margin: 1em auto;
+  width: 80%;
+  background-color: #fff;
+  min-height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 769px) {
+  .profile {
+    -ms-grid-columns: 20% 1fr;
+        grid-template-columns: 20% 1fr;
+  }
+}
+
+.profile__info {
+  padding: 2em 2em 0 2em;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.profile__fig {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile__img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile__text {
+  padding: 1em;
+}
+
+.profile__text-name {
+  font-size: 1.4em;
+}
+
+.profile__text-city {
+  margin-top: 1em;
+}
+
+.profile__text-star {
+  display: block;
+  text-decoration: none;
+  margin: 1em 0;
+}
+
+.profile__text-send-msg {
+  display: block;
+  width: 100%;
+  background-color: #D14836;
+  border: unset;
+  border-radius: 9px;
+  padding: 1em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.profile__articles {
+  width: 90%;
+  margin: 2em auto;
+}
+
+.profile__articles-header {
+  padding: 0.5em 1em;
+  text-align: center;
+  width: 100%;
+  background-color: #1D2120;
+  color: #F1F1F1;
+}
+
+.profile__articles-article {
+  position: relative;
+  height: 100px;
+  padding: 1em;
+}
+
+.profile__articles-article:nth-child(even) {
+  background-color: #F1F1F1;
+}
+
+.profile__articles-article-link {
+  font-size: 1.2em;
+  color: #1D2120;
+}
+
+.profile__articles-article-description {
+  margin-top: 0.4em;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.profile__articles-article-price {
+  position: absolute;
+  color: #D14836;
+  right: 7em;
+  bottom: 0;
+}
+
+.profile__articles-article-show {
+  padding: 2em 0;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.profile__articles-article-no-show {
+  padding: 2em 0;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.profile__articles-fig {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.profile__articles-img {
+  width: 100px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=profile.css.map */

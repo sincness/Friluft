@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', OpenSans;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.registerform {
+  font-family: 'Roboto', OpenSans;
+  display: -ms-grid;
+  display: grid;
+  background-color: #fff;
+  width: 80%;
+  margin: 2em auto;
+}
+
+.registerform__headline {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+.registerform__col1 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.registerform__col2 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.registerform__label {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registerform__input {
+  border: 1px solid #d1d1d1;
+  width: 200px;
+  padding: 0 .3em;
+  height: 2em;
+  font-size: .9em;
+}
+
+.registerform__inputcontainer {
+  position: relative;
+  margin: 1em auto 0 auto;
+}
+
+.registerform__checkcontainer {
+  position: relative;
+  margin: 0 .7em;
+  text-align: center;
+}
+
+.registerform #register {
+  margin: 1.5em auto;
+  padding: .5em 0;
+  width: 80%;
+  font-size: 1em;
+  font-weight: 300;
+  background-color: #D14836;
+  color: #fff;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=main.css.map */

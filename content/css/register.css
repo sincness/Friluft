@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #F1F1F1;
+  overflow-x: hidden;
+}
+
+.registerform {
+  font-family: 'Roboto', OpenSans;
+  display: -ms-grid;
+  display: grid;
+  background-color: #fff;
+  width: 80%;
+  margin: 2em auto;
+}
+
+@media (min-width: 601px) {
+  .registerform {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.registerform__headline {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+@media (min-width: 601px) {
+  .registerform__headline {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
+.registerform__col1 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media (min-width: 601px) {
+  .registerform__col1 {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+.registerform__col2 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media (min-width: 601px) {
+  .registerform__col2 {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+.registerform__input {
+  border: 1px solid #d1d1d1;
+  width: 200px;
+  padding: 0 .3em;
+  height: 2em;
+  font-size: .9em;
+}
+
+.registerform__label {
+  display: -ms-grid;
+  display: grid;
+}
+
+.registerform__terms {
+  display: inline-block;
+}
+
+.registerform__inputcontainer {
+  position: relative;
+  margin: 1em auto 0 auto;
+}
+
+.registerform__checkcontainer {
+  position: relative;
+  margin: 2em .7em 0 .7em;
+  text-align: center;
+}
+
+@media (min-width: 601px) {
+  .registerform__checkcontainer {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+}
+
+.registerform #register {
+  margin: 1.5em auto;
+  padding: .5em 0;
+  width: 80%;
+  font-size: 1em;
+  font-weight: 300;
+  background-color: #D14836;
+  color: #fff;
+  border-radius: 10px;
+}
+
+@media (min-width: 601px) {
+  .registerform #register {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    -ms-grid-row: 5;
+    grid-row: 5;
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=register.css.map */

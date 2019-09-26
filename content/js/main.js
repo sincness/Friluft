@@ -7,14 +7,13 @@ $(document).ready(function(e) {
         $.ajax({
             type: 'GET',
             url: 'content/includes/functions/search.php',
-            data: 'txt=' + text,
+            data: {'val': text},
             success: function (data) {
-                console.log(data);
-                $(".search__dropdown").html(data);
-                $(".search__dropdown").html('ASD');
+                for (let i = 0; i < data.length; i++) {
+                    console.log(data);
+                    $(".search__dropdown").html(data);
+                }
             }
         });
     });
 });
-
-console.log('hej');

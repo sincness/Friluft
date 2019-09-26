@@ -45,7 +45,7 @@
                     </figure>
                 </div>
                 <p class="profile__articles-article-show">Vis flere</p> -->
-                <p class="profile__articles-article-no-show">Jens Hansen har ingen annoncer.</p>
+                <p class="profile__articles-article-no-show"><?php echo $username ?> har ingen annoncer.</p>
             </section>
         </section>
     </section>

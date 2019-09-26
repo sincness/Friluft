@@ -1,7 +1,12 @@
 <?php
 include '../../class/db.php';
-        $getUrlId = 1;
-        $search_output = DB::query("SELECT users.username FROM users WHERE users.username LIKE :username", array(":username"=>"%".$_POST['search']."%"));
-        $username = DB::query('SELECT * FROM users WHERE id=:id', array(':id'=>$getUrlId))[0]['username'];
+$getUrlId = 1;
+if (isset($_GET['val'])) {
+    $get_search_val = $_GET['val'];
 
-        echo ($username);
+    $search_output = DB::query("SELECT users.id, users.username FROM users WHERE users.username LIKE :username", array(":username"=>"%".$get_search_val."%"));
+    
+    foreach ($search_output as $val) {
+        echo '<a href="profile.php?id='. $val['id'].'">'. $val['username'] . '</a>';
+    }
+}

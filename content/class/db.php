@@ -16,10 +16,3 @@ class DB {
         }
     }
 }
-
-$message = DB::query("SELECT * FROM messenger");
-
-foreach($message as $value){
-    //Print the element out.
-    echo ''.$value['message'].'';
-}

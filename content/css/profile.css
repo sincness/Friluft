@@ -145,4 +145,19 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+#search {
+  padding: 0.5em;
+  width: 300px;
+}
+
+.search__dropdown {
+  width: 300px;
+  background-color: #fff;
+}
+
+.search__dropdown a {
+  display: block;
+  padding: 1em;
+}
 /*# sourceMappingURL=profile.css.map */

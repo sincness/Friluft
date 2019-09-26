@@ -111,3 +111,19 @@
         object-fit: cover;
     }
 }
+
+
+
+#search {
+    padding: 0.5em;
+    width: 300px;
+}
+
+.search__dropdown {
+    width: 300px;
+    background-color: $white;
+    a {
+        display: block;
+        padding: 1em;
+    }
+}

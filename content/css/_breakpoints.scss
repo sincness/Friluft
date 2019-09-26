@@ -106,7 +106,6 @@ $unit-intervals: (
 ///  }
 ///
 $im-media-support: true !default;
-
 ///
 /// Selects which breakpoint to emulate when support for media queries is disabled. Media queries that start at or
 /// intercept the breakpoint will be displayed, any others will be ignored.
@@ -137,7 +136,6 @@ $im-media-support: true !default;
 ///  /* No output */
 ///
 $im-no-media-breakpoint: 'desktop' !default;
-
 ///
 /// Selects which media expressions are allowed in an expression for it to be used when media queries
 /// are not supported.
@@ -170,7 +168,6 @@ $im-no-media-breakpoint: 'desktop' !default;
 ///  /* No output */
 ///
 $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
-
 ////
 /// Cross-engine logging engine
 /// @author Hugo Giraudel

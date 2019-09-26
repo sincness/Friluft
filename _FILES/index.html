@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Colors</title>
+</head>
+<body>
+    <div class="container">
+        <div data-color="$secondary" class="color"></div>
+        <div data-color="$inactive" class="color"></div>
+        <div data-color="$active" class="color"></div>
+        <div data-color="$primary" class="color"></div>
+        <div data-color="$cc" class="color"></div>
+        <div data-color="$cc2" class="color"></div>
+        <div data-color="$cc3" class="color"></div>
+        <div data-color="$cc4" class="color"></div>
+        <div data-color="$cc5" class="color"></div>
+        <div data-color="$cc6" class="color"></div>
+        <div data-color="$cc7" class="color"></div>
+        <div data-color="$cc8" class="color"></div>
+        <div data-color="$cc9" class="color"></div>
+        <div data-color="$cc10" class="color"></div>
+        <div data-color="$cc11" class="color"></div>
+        <div data-color="$cc12" class="color"></div>
+        <div data-color="$cc13" class="color"></div>
+        <div data-color="$cc14" class="color"></div>
+        <div data-color="$cc15" class="color"></div>
+        <div data-color="$cc16" class="color"></div>
+        <div data-color="$cc17" class="color"></div>
+        <div data-color="$cc18" class="color"></div>
+        <div data-color="$cc19" class="color"></div>
+    </div>
+    <textarea id="t"></textarea>
+
+    <script>
+    
+    let colors = document.querySelectorAll('.color');
+    const t = document.getElementById('t');
+
+
+    colors.forEach(color => {
+        color.addEventListener('click', () => {
+            // console.log(color.dataset.color);
+            t.innerText = color.dataset.color;
+            t.select();
+            document.execCommand("copy");
+            
+            console.log('Color Variable: ' + color.dataset.color + ' is copied to clipboard!');
+            // let copy = color.dataset.color;
+            // copy.select();
+            // console.log(copy);
+            
+        })
+        
+    });
+
+    </script>
+</body>
+</html>

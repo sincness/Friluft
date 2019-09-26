@@ -1,0 +1,105 @@
+@import '_COLORS.scss';
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    outline: none;
+}
+
+#t {
+    border:none;
+    color: transparent;
+    resize: none;
+    cursor: unset;
+}
+#t::selection {
+    background-color: none;
+}
+
+.container {
+    height: 150px;
+    width: 400px;
+    border-radius: 4px;
+    background-color: $primary;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    
+    .color {
+        margin: 8px auto;
+        height: 2em;
+        width: 2em;
+        border: 1px solid black;
+    }
+    .color:first-child {
+        background-color: $secondary;
+    }
+    .color:nth-child(2) {
+        background-color: $inactive;
+    }
+    .color:nth-child(3) {
+        background-color: $active;
+    }
+    .color:nth-child(4) {
+        background-color: $primary;
+    }
+    .color:nth-child(5) {
+        background-color: $cc;
+    }
+    .color:nth-child(6) {
+        background-color: $cc2;
+    }
+    .color:nth-child(7) {
+        background-color: $cc3;
+    }
+    .color:nth-child(8) {
+        background-color: $cc4;
+    }
+    .color:nth-child(9) {
+        background-color: $cc5;
+    }
+    .color:nth-child(10) {
+        background-color: $cc6;
+    }
+    .color:nth-child(11) {
+        background-color: $cc7;
+    }
+    .color:nth-child(12) {
+        background-color: $cc8;
+    }
+    .color:nth-child(13) {
+        background-color: $cc9;
+    }
+    .color:nth-child(14) {
+        background-color: $cc10;
+    }
+    .color:nth-child(15) {
+        background-color: $cc11;
+    }
+    .color:nth-child(16) {
+        background-color: $cc12;
+    }
+    .color:nth-child(17) {
+        background-color: $cc13;
+    }
+    .color:nth-child(18) {
+        background-color: $cc14;
+    }
+    .color:nth-child(19) {
+        background-color: $cc15;
+    }
+    .color:nth-child(20) {
+        background-color: $cc16;
+    }
+    .color:nth-child(21) {
+        background-color: $cc17;
+    }
+    .color:nth-child(22) {
+        background-color: $cc18;
+    }
+    .color:nth-child(23) {
+        background-color: $cc19;
+    }
+}

@@ -23,8 +23,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     border-top: 1px solid #e5e5e5;
-    width: 80vw;
-    margin: 1em auto;
+  width: 100%;
+text-align: center;
 
     @include media ("<tablet-xs") {
 
@@ -32,6 +32,8 @@ body {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        text-align: center;
 
 
         &-inner {
@@ -46,10 +48,12 @@ body {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        text-align: center;
 
 
         &-inner {
-            flex: 0 25%;
+            flex: 1 25%;
             margin: 0 -1px;
             &-item {
                 list-style: none;

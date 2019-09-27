@@ -20,8 +20,7 @@
         }
         &__menu {
             font-size: 16px;
-            margin: 0;
-            padding: 1em;
+            padding: 5em 1em 1em 1em;
             list-style: none;
             height: 100vh;
             // display: flex;
@@ -29,8 +28,8 @@
             &-dropdown {
                 display: none;
                 box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
-                margin-top: 1em;
-                left: 5%;
+                // margin-top: 0.5em;
+                left: 2%;
                 &-list {
                     list-style-type: none;
                 }
@@ -46,43 +45,43 @@
         }
         &__list {
             display: block;
+            margin: 2em 1em 0 1em;
+            padding: 1em;
             position: relative;
-            margin: 1em;
-            transform: translateX(-50%);
-            left: 85%;
-            top: 20%;
-            margin-top: 3em;
             a {
                 color: white;
             }
         }
         &__list:hover .nav__menu-dropdown {
             float: none;
-            font-size: 12px;
-            display: block;
+            font-size: .8em;
+            display: none;
             position: absolute;
         }
         // SRC INPUT
         &__src {
             position: absolute;
-            transform: translateX(-50%);
-            left: 50%;
-            margin-top: 1em;
+            // transform: translateX(-50%);
+            width: 50%;
+            left: 10%;
+            margin: 1em 0;
             &-btn {
+                position: absolute;
                 background: $cc15;
                 height: 32px;
                 color: $light;
                 border-radius: 0 10px 10px 0;
                 border: unset;
                 cursor: pointer;
-                float: left;
+                // float: left;
+                top: 0;
                 width: 3em;
             }
             input {
                 border-radius: 10px 0 0 10px;
                 height: 32px;
                 padding: 0 1em;
-                width: 14em;
+                width: 100%;
                 border: 0.5px solid $cc9;
                 float: left;
             }
@@ -119,9 +118,16 @@
     
     // MEDIA QURIES
     //mobil
-    @include media (">phone") {
-        .nav {
-            overflow: hidden;
+    @include media ("<tablet") {
+        .nav__list {
+            text-align: center;
+        }
+        .nav__menu-dropdown {
+            text-align: center;
+            display: none;
+        }
+        .nav_list:hover .nav__menu-dropdown {
+            display: none;
         }
     }
     
@@ -136,8 +142,8 @@
                 width: 30em;
             }
             &__list {
-                left: 90%;
-                top: 15%;
+                text-align: center;
+                
                 font-size: 1.5em;
             }
             .fas {
@@ -159,20 +165,22 @@
     @include media (">desktop") {
         .nav {
             &__menu {
+                padding: 1em;
                 display: flex;
                 height: 6em;
             }
             &__src {
                 transform: translateX(-50%);
                 left: 35%;
+                width: 50%;
             }
             &__src input {
-                width: 70em;
+                width: 100%;
             }
             &__list {
-                left: 14%;
-                top: -77%;
-                padding: 2em;
+                display: block;
+                left: 7.8%;
+                padding: .2em .5em;
                 font-size: 1.2em;
             }
             &__list a {
@@ -185,7 +193,7 @@
                 transform: translateX(-50%);
                 left: 83%;
                 top: 2%;
-                width: 10%;
+                width: unset;
                 padding: 0.8em;
                 border-radius: 10px;
             }
@@ -193,6 +201,12 @@
                 transform: translateX(-50%);
                 left: 93%;
                 top: 3.5%;
+            }
+            .nav__list:hover .nav__menu-dropdown {
+                float: none;
+                font-size: .8em;
+                display: block;
+                position: absolute;
             }
             .down {
                 transform: rotate(45deg);

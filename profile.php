@@ -12,12 +12,10 @@
     <link rel="stylesheet" href="content/css/profile.css">
 </head>
 <body>
-<form name="searchBox">
-    <input type="text" name="search" placeholder="Søg.." id="search">
-</form>
-<div class="search__dropdown">
-    <a href="#">asd</a>
-</div>
+    <!-- Navigation -->
+    <?php include 'content/includes/layout/nav.php'; ?>
+
+
     <section class="profile">
         <section class="profile__info">
             <figure class="profile__fig">
@@ -50,7 +48,5 @@
         </section>
     </section>
     <script src="https://kit.fontawesome.com/4a0535102f.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="content/js/main.js"></script>
 </body>
 </html>

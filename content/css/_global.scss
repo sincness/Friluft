@@ -1,1 +1,16 @@
 // This is the global stylesheet. used for global margin, padding etc.
+@import '../css/colors';
+@import '../css/breakpoints';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: $light;
+    overflow-x: hidden;
+}

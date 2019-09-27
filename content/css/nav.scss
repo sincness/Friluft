@@ -261,3 +261,25 @@
         padding: 1em;
     }
 }
+
+
+#logo {
+    width: 2.5%;
+    transform: translateX(2em);
+    img {
+        width: 100%;
+    }
+}
+
+#bglogo {
+    position: absolute;
+    top: 40%;
+    opacity: 0.5;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    z-index: -1;
+    img {
+        width: 100%;
+    }
+}

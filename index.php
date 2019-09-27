@@ -12,7 +12,40 @@
 <body>
 <?php include 'content/includes/layout/nav.php'; ?>
 
-    <script src="https://kit.fontawesome.com/ac1a08b6ce.js" crossorigin="anonymous"></script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p style="text-align: center; opacity: 0.5;">Information is coming soon!</p>
+    <figure id="bglogo"><a href="index.php"><img src="content/images/logo.svg" alt=""></a></figure>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+<?php include 'content/includes/layout/footer.php'; ?>
+
 </body>
 
 </html>

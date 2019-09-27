@@ -113,6 +113,8 @@ if (isset($_POST['register'])) {
     <title>Register</title>
 </head>
 <body>
+<?php include 'content/includes/layout/nav.php'; ?>
+
      <form autocomplete="off" method="POST" class="registerform">
         <h2 class="registerform__headline">Registrer</h2>
         <?php
@@ -174,5 +176,6 @@ if (isset($_POST['register'])) {
         </section>
         <button name="register" id="register">Registrer</button>
      </form>
+     <?php include 'content/includes/layout/footer.php'; ?>
 </body>
 </html>

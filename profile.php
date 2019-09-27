@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="content/css/profile.css">
 </head>
 <body>
+    
     <!-- Navigation -->
     <?php include 'content/includes/layout/nav.php'; ?>
 
@@ -47,6 +48,7 @@
             </section>
         </section>
     </section>
+    <?php include 'content/includes/layout/footer.php'; ?>
     <script src="https://kit.fontawesome.com/4a0535102f.js" crossorigin="anonymous"></script>
 </body>
 </html>

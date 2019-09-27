@@ -9,11 +9,10 @@ include 'content/class/loginclass.php';
 if (isset($_POST['login'])) {
         $username = $_POST['username'];
         $password = $_POST['password'];
-
         if (DB::query('SELECT username FROM users WHERE username=:username', array(':username'=>$username))) {
-
                 if (password_verify($password, DB::query('SELECT password FROM users WHERE username=:username', array(':username'=>$username))[0]['password'])) {
-                        $welcome = 'Velkommen til '.$username.'!';
+
+                  $welcome = 'Velkommen til '.$username.'!';
                         $message = '<br><a href="logout.php">Log ud!</a>';
                         // $chkmark = 1;
                         $cstrong = True;
@@ -47,6 +46,7 @@ if (isset($_POST['login'])) {
     <title>Login</title>
 </head>
 <body>
+    <?php include 'content/includes/layout/nav.php'; ?>
     <form autocomplete="off" method="POST" class="loginform">
         <h2 class="loginform__headline">Log ind</h2>
         
@@ -74,6 +74,18 @@ if (isset($_POST['login'])) {
         <button name="login" id="login">Log ind</button>
 
     </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <?php include 'content/includes/layout/footer.php'; ?>
 </body>
 </html>
 

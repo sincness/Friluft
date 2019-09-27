@@ -1,0 +1,146 @@
+@import'_global.scss';
+
+$breakpoints: ('phone': 320px,
+    'tablet-xs':426px,
+    'tablet': 768px,
+    'desktop': 1024px);
+
+body {
+    overflow-x: hidden;
+}
+
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid #e5e5e5;
+    width: 100%;
+    text-align: center;
+
+    @include media ("<tablet-xs") {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+
+
+        &-inner {
+            flex: 0 50%;
+        }
+    }
+
+
+    @include media (">tablet-xs") {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+
+
+        &-inner {
+            flex: 1 25%;
+            margin: 0 -1px;
+            &-item {
+                list-style: none;
+                text-decoration: none;
+
+                &_title {
+                    font-weight: 200 bold;
+                    margin-bottom: 10em;
+                    color: black;
+                }
+            }
+
+        }
+    }
+
+    &-inner {
+        list-style: none;
+        line-height: 1.4em;
+        text-decoration: none;
+        margin: 1em auto;
+
+
+        &-item {
+            flex: 0 25%;
+            list-style: none;
+            text-decoration: none;
+
+            &_title {
+                font-weight: 200 bold;
+                margin-bottom: 10em;
+                color: black;
+
+                &_link {
+                    text-decoration: none;
+                    line-height: 2em;
+                    color: $dark;
+
+                    &:hover {
+                        color: $primary;
+
+
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+.legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+    position: relative;
+    flex-direction: column-reverse;
+    margin: 0% auto;
+
+    &__copy {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -2em;
+        text-align: center;
+    }
+
+}
+
+.legal__ikon-container {
+    align-self: end;
+    position: relative;
+
+    @include media (">desktop") {
+
+        &_ikon:first-child {
+            bottom: 0;
+            right: 4.5vw;
+        }
+
+        &_ikon:nth-child(2) {
+            bottom: 0;
+            right: 0;
+        }
+
+        &_ikon:nth-child(3) {
+            bottom: 0;
+            right: 4.5vw;
+        }
+    }
+
+    &_ikon {
+        width: 40px;
+        align-self: flex-end;
+
+    }
+}

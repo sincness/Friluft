@@ -21,6 +21,8 @@
         <div class="search__dropdown">
         </div>
         <ul class="nav__menu">
+        <figure id="logo"><a href="index.php"><img src="content/images/logo.svg" alt=""></a></figure>
+
             <li class="nav__list"><a href="">Jagt <i class="down"></i></a>
                 <ul class="nav__menu-dropdown">
                         <li class="nav__menu-dropdown-list-item"><a href="">Fiske tilbehør</a></li>
@@ -48,9 +50,9 @@
             </li>
         </ul>
         <input class="nav__btn" type="button" value="Opret annonce">
-        <a class="nav__login-link" href="register.php">Opret/Login</a>
+        <a class="nav__login-link" href="login.php">Opret/Login</a>
     </nav>
-    <script src="https://kit.fontawesome.com/ac1a08b6ce.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4a0535102f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="content/js/main.js"></script>
 </body>

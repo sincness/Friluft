@@ -278,4 +278,29 @@ body {
   display: block;
   padding: 1em;
 }
+
+#logo {
+  width: 2.5%;
+  -webkit-transform: translateX(2em);
+          transform: translateX(2em);
+}
+
+#logo img {
+  width: 100%;
+}
+
+#bglogo {
+  position: absolute;
+  top: 40%;
+  opacity: 0.5;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20%;
+  z-index: -1;
+}
+
+#bglogo img {
+  width: 100%;
+}
 /*# sourceMappingURL=nav.css.map */

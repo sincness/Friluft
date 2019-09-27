@@ -13,8 +13,28 @@
         background-color: $light;
     }
     
+    .burger {
+        display: block;
+        position: absolute;
+        color: $light;
+        fill: $light;
+        transform: translateX(-50%);
+        left: 90%;
+        right: 0;
+        top: 3.4%;
+        z-index: 100;
+        cursor: pointer;
+        img {
+            width: 50%;
+        }
+    }
+    .open {
+        display: block !important;
+    }
+
     // NAVIGATION
     .nav {
+        display: none;
         &__list a {
             text-decoration: none;
         }
@@ -107,13 +127,6 @@
             position: absolute;
             color: $light;
         }
-        .fas {
-            position: absolute;
-            color: $light;
-            transform: translateX(-50%);
-            left: 90%;
-            top: 3.4%;
-        }
     }
     
     // MEDIA QURIES
@@ -146,7 +159,7 @@
                 
                 font-size: 1.5em;
             }
-            .fas {
+            .burger {
                 top: 2.7%;
             }
             &__btn {
@@ -163,7 +176,12 @@
     
     //desktop
     @include media (">desktop") {
+        .burger {
+            display: none;
+        }
         .nav {
+            display: block;
+
             &__menu {
                 padding: 1em;
                 display: flex;
@@ -185,9 +203,6 @@
             }
             &__list a {
                 color: $light;
-            }
-            .fas {
-                display: none;
             }
             &__btn {
                 transform: translateX(-50%);
@@ -230,3 +245,19 @@
             }
         }
     }
+
+
+    
+.search__dropdown {
+    position: absolute;
+    top: 4em;
+    left: 12em;
+    z-index: 100;
+    width: 500px;
+    background-color: $white;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+    a {
+        display: block;
+        padding: 1em;
+    }
+}

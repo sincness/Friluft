@@ -12,16 +12,14 @@
 </head>
 
 <body>
-    <nav class="nav">
+<i class="burger" id="burger"><img src="content/images/icons/bars-solid.svg" alt=""></i>
+    <nav class="nav" id="mobile-menu">
         <form class="nav__src" action="">
             <input class="nav__src-input" autocomplete="off" type="text" placeholder="Søg.." navn="search" id="search">
             <button class="nav__src-btn" type="submit"><i class="fa fa-search"></i></button>
         </form>
         <div class="search__dropdown">
-            <a href="#">asd</a>
         </div>
-        <i class="fas fa-bars"></i>
-
         <ul class="nav__menu">
             <li class="nav__list"><a href="">Jagt <i class="down"></i></a>
                 <ul class="nav__menu-dropdown">

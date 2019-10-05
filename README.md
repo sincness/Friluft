@@ -6,6 +6,19 @@
 
 
 # kommandoer
+``` bash
+
+! (Gør dette før i begynder at lave noget, ellers vil det ikke virke)
+# Skriv det her for at installere serveren
+npm install
+
+! (Gør dette før i begynder at lave noget, ellers vil det ikke virke)
+# Skriv det her for at installere clienten
+npm run client-install
+
+
+```
+
 ### Start både clienten & serveren
 > npm run dev
 

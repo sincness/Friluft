@@ -1,11 +1,11 @@
 # React projekt
+> Her er starten på vores react projekt
 
 
 ----------------------------------------------
 
 
 # kommandoer
-> Her er starten på vores react projekt
 ## Start både clienten & serveren
 > npm run dev
 

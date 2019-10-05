@@ -1,0 +1,86 @@
+@import '_colors.scss';
+@import '_global.scss';
+@import '_breakpoints.scss';
+
+
+
+.create{
+    position: relative;
+    background-color: $white;
+    width: 80%;
+    margin: 1em auto;
+    box-shadow: 0 0 10px 2px rgba(black, 0.2);
+    @include media (">desktop"){
+        max-width: 800px;
+    }
+    form {
+    padding: 2em;
+    height: 700px;
+    }
+    input, textarea, select {
+        padding: .8em;
+        width: 80%;
+        @include media (">desktop"){
+            width: 80%;
+        }
+    }
+    label {
+        margin-top: 1em;
+        margin-bottom: .2em;
+        display: block;
+    }
+    &__01 {
+        @include media (">desktop"){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__Desc {
+        resize: none;
+        min-height: 150px;
+    }
+    &__trin {
+        text-align: center;
+        padding: 1em;
+        background-color: $dark;
+        color: white;
+    }
+    &__image {
+        margin: 1em 0;
+        #imageFile {
+            visibility: hidden;
+        }
+        .uploadedImage{
+            display: none;
+            @include media (">desktop"){
+                display: block;
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
+            }
+        }
+        .create__file-btn {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+            padding: 0.5em;
+            border-radius: 9px;
+            border: 1px solid $dark;
+            cursor: pointer;
+        }
+    }
+    &__button {
+        position: absolute;
+        bottom: 1em;
+        left: 50%;
+        transform: translateX(-50%);
+        button {
+            padding: 1em 2em;
+            background-color: #7936D1;
+            border: none;
+            border-radius: 9px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

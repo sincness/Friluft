@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Customers from './components/customers';
+import Profile from './components/profile/profile';
+import Home from './components/customers';
+import CreateArticle from './components/CreateArticle';
+import { Switch, Route } from "react-router-dom";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">React Express Starter</h1>
-        </header>
-        <Customers />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <React.Fragment>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/profile/:handle" component={Profile} />
+        <Route path="/areate_article" component={CreateArticle} />
+      </Switch>
+    </React.Fragment>
+  );
 }
 
 export default App;
